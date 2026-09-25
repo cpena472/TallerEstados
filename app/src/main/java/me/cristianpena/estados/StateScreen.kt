@@ -17,22 +17,16 @@ import androidx.compose.ui.unit.sp
 
 @Preview(showSystemUi = true)
 @Composable
-fun StateScreen() {
-
-    var contador by remember { mutableStateOf(value = 3) }
+fun StateScreen(){
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-
     ) {
-        Text("contador: o", fontSize = 32.sp)
+        Text("contador: 0", fontSize = 32.sp)
         Spacer(modifier = Modifier.height(25.dp))
-        Button(onClick =  {
-            log.i(tag ="mis-errores", msg= "Estoy dando click")
-            contador = contador + 1
-        }) {
-            Text("Sumar 1")
+        Button(onClick = {}) {
+            Text("sumat 1")
         }
     }
 }
